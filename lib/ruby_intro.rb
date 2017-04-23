@@ -7,7 +7,10 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  return 0 if arr.nil? or arr.empty?
+  return arr[0] if arr.size == 1
+  max_2 = arr.sort[-2, arr.size]
+  max_2.inject 0, :+
 end
 
 def sum_to_n? arr, n
