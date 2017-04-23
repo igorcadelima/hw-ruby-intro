@@ -14,7 +14,9 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  arr.combination(2).any? do |x, y|
+    x + y == n
+  end
 end
 
 # Part 2
